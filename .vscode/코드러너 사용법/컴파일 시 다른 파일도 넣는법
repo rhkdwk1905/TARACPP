@@ -1,0 +1,17 @@
+
+There are two ways to solve it.
+
+In settings(cmd + ,), find Run Code Configuration.
+
+There is a tab 'Executor map' and open 'edit in settings.json'.
+
+Then you can see the settings for code-runner extension (executor map).
+
+Change the cpp part into this
+
+"cpp": "cd $dir && g++ -o fileNameWithoutExt *.cpp && ./$fileNameWithoutExt"
+This code compiles every cpp file in the current directory, so the header will be included properly.
+
+A problem of this solution is, if there are other cpp files with main(), then it will not be compiled properly.
+
+So you'd better use one folder for one cpp program.

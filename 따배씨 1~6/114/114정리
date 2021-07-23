@@ -1,0 +1,12 @@
+int g_x; //external linkage
+static int g_x; //internal linkage
+const int g_x; //불가, const는 처음에 초기화해야함.
+
+extern int g_z; //가능
+extern const int g_z; //가능, 다만 어디선가 초기화해줘야함.
+
+int g_y(1); //가능, 초기화된 변수
+static int g_y(1); //외부서 접근 불가(internal linkage), 초기화
+
+extern int g_w(1); //다른곳에선 초기화 안됨.
+extern const int g_w(1); //초기화됨+상수+외부사용가능

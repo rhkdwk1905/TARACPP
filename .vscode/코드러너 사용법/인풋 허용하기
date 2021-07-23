@@ -1,0 +1,13 @@
+vs code에서 C++로 code runner를 사용해서
+
+cin이나 scanf로 인풋을 입력할 때
+
+code-runner의 속성을 검색하여 run in terminal을 true로 바꿔주거나 체크한다.
+
+ 
+
+그럼 콘솔창에서 input입력이 가능하다.
+
+
+
+출처: https://zereight.tistory.com/111 [Zereight's Blog]
