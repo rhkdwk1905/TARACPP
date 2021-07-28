@@ -1,0 +1,10 @@
+class Date{
+    private: //기본, class안에서만 접근가능
+        ...
+    public: //class밖에서도 접근가능
+        ...
+    protected:
+};
+
+Date today;
+today.함수이름(함수인자);
