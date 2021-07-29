@@ -2,6 +2,22 @@ class Date{
     private: //기본, class안에서만 접근가능
         ...
     public: //class밖에서도 접근가능
+        Date(int in_a, int in_b) : a(5), b('6'), ... //멤버초기화리스트
+        {
+            ...
+        }//생성자 내용
+        
+        Date(int in_a) : Date(in_a, 0)
+        {
+            ...
+        }//위임생성자
+        
+        ~Date()
+        {
+            ...
+        }//소멸자
+        Date&(int value) { ...; return *this; }
+        //연속으로 함수사용가능[ex: Date.add(10).sub(10).mult(3);]
         ...
     protected:
 };
