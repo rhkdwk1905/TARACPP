@@ -2,6 +2,9 @@ class Date{
     private: //기본, class안에서만 접근가능
         ...
     public: //class밖에서도 접근가능
+        static int year;
+        //클래스의 객체는 static변수를 공유
+        
         Date(int in_a, int in_b) : a(5), b('6'), ... //멤버초기화리스트
         {
             ...
@@ -11,7 +14,18 @@ class Date{
         {
             ...
         }//위임생성자
-        
+
+        Date(Date& in_date) {} //복사생성자
+
+        this->... //해당 '객체'를 가리키는 포인터
+        //static함수는 this사용 불가
+
+        멤버값은 객체별로 달리 저장되지만,
+        멤버함수는 하나만 저장하고 함께쓴다
+         int (Date::*fptr1)() = &Date::temp;
+        따라서 멤버함수포인터는 위와같이 선언해야함
+        실행시엔 cout << (st1.*fptr1)() << endl; 처럼 사용
+
         ~Date()
         {
             ...

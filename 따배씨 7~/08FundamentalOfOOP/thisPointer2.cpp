@@ -33,6 +33,9 @@ int main(){
     //이를 Chaining Member Function이라 한다
     //실전용보다는 간지용
 
+    //참고로 이것도 된다
+    Calc(10).add(10).sub(2).mult(3).print();
+
 
     return 0;
 }
