@@ -1,0 +1,3 @@
+Monster클래스는 Position2D클래스를 알아야 함
+Position2D클래스는 Monster클래스를 몰라도 됨
+Position2D클래스는 Monster클래스 뿐만 아니라 다른 클래스에도 사용 가능
