@@ -33,7 +33,7 @@ class Date{
         Date&(int value) { ...; return *this; }
         //연속으로 함수사용가능[ex: Date.add(10).sub(10).mult(3);]
         ...
-    protected:
+    protected: //private 상태를 유지하면서 상속된 클래스에는 허용됨
 };
 
 Date today;
